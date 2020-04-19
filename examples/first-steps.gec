@@ -1,3 +1,3 @@
-define const myConst as 10;
-define const myBool as true;
-define const myString as "Hello, world!";
+please define myConst as 10;
+please define myBool as true;
+please define myString as "Hello, world!";
