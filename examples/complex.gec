@@ -1,0 +1,13 @@
+please define countTo10() as
+  please define i as 0;
+  while (i < 10) please do
+    please assign i as i + 10;
+  thanks
+  please finish with 0;
+thanks
+
+please call countTo10();
+
+please define userInput;
+please print("Give me a digit");
+please retrieve in userInput;
