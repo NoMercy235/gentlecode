@@ -1,3 +1,5 @@
 please define myConst as 10;
 please define myBool as true;
 please define myString as "Hello, world!";
+please print("Hi");
+please print(myString);
