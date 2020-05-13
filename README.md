@@ -1,5 +1,5 @@
 # GentleCode - WIP
-Toy programming language which transforms a .gec file to .asm (INTEL). Let's see how this goes.
+Toy compiler which transforms a program written in the Gentlecode programming language (.gec file) to its Assembly equivalent (.asm file, version INTELx64). Let's see how this goes.
 
 ## How the language looks like:
 
@@ -11,10 +11,17 @@ please print("Hi");
 please print(myString);
 ```
 
-#### First steps
+#### Current workflow
 
-- [ ] Read a file in the .gec format and return a list of tokens
-- [ ] Parse the tokens and return an AST (Abstract Syntax Tree)
-- [ ] Turn the AST into an executable .asm file and write it to disk
+- Read a .gec file
+- Parse its content and get the tokens (lexer)
+- Use the tokens to construct an Abstract Syntax Tree (AST)
+- Generate the Assembly code based on the nodes in the tree and write it to the disk
 
-The initial supported operations will be addition, subtraction of integers.
+That's it. After that you can run it as you would usually run any .asm file
+
+```bash
+➜  nasm -f elf64 myProgram.asm [-l myProgram.lst]                       
+➜  gcc -no-pie -o myProgram myProgram.o                                
+➜  ./myProgram
+``` 
