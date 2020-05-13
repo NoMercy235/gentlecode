@@ -4,11 +4,11 @@ Toy programming language which transforms a .gec file to .asm (INTEL). Let's see
 ## How the language looks like:
 
 ```
-please add 10, 20
-please define now myConstant ::= 3;
-please define future myVar;
-
-myVar ::= please add(myConstant, 10);
+please define myConst as 10;
+please define myBool as true;
+please define myString as "Hello, world!";
+please print("Hi");
+please print(myString);
 ```
 
 #### First steps
